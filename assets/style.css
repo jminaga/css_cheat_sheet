@@ -1,0 +1,124 @@
+* {
+    background-color: var(--dark);
+}
+
+
+header{ 
+    text-align: center;
+}
+header p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: var(--font-color);
+    padding: 10px;
+}
+
+
+
+main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.content {
+  font-size: 14px;
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: dashed;
+  border-width: 1px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  color: var(--font-color);
+  
+  
+} 
+
+section p {
+    font-size: 10px;
+    
+}
+
+.card{
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    border-radius: 10px;
+    flex-direction: column;
+    padding-left: 15%;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    
+
+  } 
+
+/* section div p {
+    justify-content: flex-end;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+} */
+
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        flex: 1 0 100px;
+      }
+      section p {
+    
+          font-size: 20px;
+      }
+      }
+      section div {
+  
+          flex: 1 0 100px;
+  
+      }
+    
+  
+  @media screen and (max-width: 992px) {
+    main,
+    .content {
+        flex-direction: column;
+        flex: 1 0 200px;
+      }
+      section p {
+          font-size: 40px;
+      }
+      }
+      section div {
+          flex: 1 0 100px;
+      }
+    
+  
+  @media screen and (min-width: 992px) {
+    
+    .content {
+      flex: 1 0 400px;
+    }
+    section p {
+  
+        font-size: 40px;
+    }
+    }
+    section div {
+
+        flex: 1 0 100px;
+
+    }
+  
+  
