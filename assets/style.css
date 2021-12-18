@@ -1,10 +1,12 @@
 * {
     background-color: var(--dark);
+    color: white;
 }
 
 
 header{ 
     text-align: center;
+    background-image: linear-gradient(to bottom, #909090 0%, black 100%);
 }
 header p{
     font-size: 15px;
@@ -14,6 +16,7 @@ header p{
 h1 {
     color: var(--font-color);
     padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
@@ -22,7 +25,12 @@ main {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 
+}
+
+.header {
+    margin-bottom: 10px;
 }
 
 .content {
@@ -37,13 +45,22 @@ main {
   flex-direction: column;
   background-color: var(--dark);
   color: var(--font-color);
+  transition: all 0.5s ease-in-out;
   
   
 } 
 
 section p {
     font-size: 10px;
+    margin: 10px;
     
+}
+
+code {
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    monospace;
 }
 
 .card{
@@ -58,14 +75,38 @@ section p {
     border-radius: 10px;
     flex-direction: column;
     padding-left: 8%;
+
+    
+    
+    
   
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     
-
   } 
+
+  .card-header {
+      position:relative;
+      margin-top: -20px;
+      width:100%;
+      border-radius: 8px;
+      color:rgb(250, 190, 232);
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      transition: all 0.5s ease-in-out;
+      border-style: solid;
+      border-width: 1px;
+  }
+
+
+
+  .content:hover, .card-header{
+      box-shadow: inset 0px 0px 8px
+      aqua, 0 0 15px
+      aqua;
+      
+  }
 
 /* section div p {
     justify-content: flex-end;
@@ -99,12 +140,16 @@ section p {
         flex: 1 0 200px;
       }
       section p {
-          font-size: 40px;
+          font-size: 15px;
       }
       }
       section div {
           flex: 1 0 100px;
       }
+
+    .card-header {
+        font-size:20px;
+    }
     
   
   @media screen and (min-width: 992px) {
@@ -114,7 +159,7 @@ section p {
     }
     section p {
   
-        font-size: 40px;
+        font-size: 25px;
     }
     }
     section div {
