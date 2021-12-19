@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Cheat Sheet</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/variables.css">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/variables.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <h1>CSS Snippet Cheatsheet</h1>
-        <p>Ever have trouble recalling the syntax for your favorite CSS code? Give it a permanent home and add it to this page!</p>
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>
+        Ever have trouble recalling the syntax for your favorite CSS code? Give
+        it a permanent home and add it to this page!
+      </p>
     </header>
     <main>
-        <section class="content">
-            <header class="card-header">Flexbox Row</header>
-            <p>Use these three properties to create a Flexbox row layout</p>
-            <code class = "card">
-                    .row { <br>
-                        &nbsp;&nbsp;display: flex; <br>
-                        &nbsp;&nbsp;flex-direction: row;<br>
-                        &nbsp;&nbsp;flex-wrap: wrap;<br>
-                    }<br>
-                </code>
+      <section class="content">
+        <header class="card-header">Flexbox Row</header>
+        <p>Use these three properties to create a Flexbox row layout</p>
+        <code class="card">
+          .row { <br />
+          &nbsp;&nbsp;display: flex; <br />
+          &nbsp;&nbsp;flex-direction: row;<br />
+          &nbsp;&nbsp;flex-wrap: wrap;<br />
+          }<br />
+        </code>
+      </section>
+      <section class="content">
+        <header class="card-header">Flexbox Column</header>
+        <p>Use this to create a Flexbox column layout</p>
+        <code class="card">
+          .column { <br />
+          display: flex; <br />
+          flex-direction: column;<br />
+          }
+        </code>
+      </section>
+      <section class="content">
+        <header class="card-header">CSS Grid Layout</header>
+        <p>Build a 12-column layout using CSS Grid</p>
+        <code class="card">
+          .grid {<br />
+          &nbsp;&nbsp;display: grid; <br />
+          &nbsp;&nbsp;width: 100%;<br />
+          &nbsp;&nbsp;grid-template-columns: <br />
+          &nbsp;&nbsp;repeat(12, 1f);<br />
+          }
+        </code>
+      </section>
+      <section class="content">
+        <header class="card-header">Linear Gradients</header>
+        <p>This will create a background linear gradient from top to bottom</p>
+        <code class="card">
+          .linear-gradient-background {<br />
+          &nbsp;&nbsp;background-image: linear-gradient <br />
+          &nbsp;&nbsp;(rgba(232, 102, 236, 0.3) 0%,<br />
+          &nbsp;&nbsp;(rgba(232, 102, 236, 0.6) 100%;<br />
+          }
+        </code>
+      </section>
+      <section class="content">
+        <header class="card-header">Box Transition Glow</header>
+        <p>Use transition and box shadows to glow on hover</p>
+        <code class="card">
+          .code-card .card-header {<br />
+          &nbsp;&nbsp;transition: all 0.5s ease-in-out; <br />
+          &nbsp;&nbsp;box-shadow: inset 0px 0px 8px;<br />
+          &nbsp;&nbsp;(rgba(232, 102, 236, 1), 0 0 15px<br />
+          &nbsp;&nbsp;(rgba(232, 102, 236, 1);<br />
+          }
+        </code>
+      </section>
+      <section class="content">
+        <header class="card-header">Overlay Card With Title</header>
+        <p>
+          Use position properties and negative margins to raise elements higher
+          than their natural starting point
+        </p>
+        <code class="card">
+          .card-header {<br />
+          &nbsp;&nbsp;position: relative; <br />
+          &nbsp;&nbsp;margin-top: -20;<br />
 
-            </section>
-        <section class="content">
-            <header class="card-header">Flexbox Column</header>
-            <p>Use this to create a Flexbox column layout</p>
-            <code class = "card">
-                    .column { <br>
-                        display: flex; <br>
-                        flex-direction: column;<br>
-                    }
-                </code>
-        </section>
-        <section class="content">
-            <header class="card-header">CSS Grid Layout</header>
-            <p>Build a 12-column layout using CSS Grid</p>
-            <code class = "card">
-                .grid {<br>
-                    &nbsp;&nbsp;display: grid; <br>
-                    &nbsp;&nbsp;width: 100%;<br>
-                    &nbsp;&nbsp;grid-template-columns: <br> 
-                    &nbsp;&nbsp;repeat(12, 1f);<br>
-                }
-            </code>
-        </section>
-        <section class="content">
-            <header class="card-header">Linear Gradients</header>
-            <p>This will create a background linear gradient from top to bottom</p>
-            <code class = "card">
-                .linear-gradient-background {<br>
-                    &nbsp;&nbsp;background-image: linear-gradient <br>
-                    &nbsp;&nbsp;(rgba(232, 102, 236, 0.3) 0%,<br>
-                    &nbsp;&nbsp;(rgba(232, 102, 236, 0.6) 100%;<br>                    
-                }
-            </code>
-        </section>
-        <section class="content">
-            <header class="card-header">Box Transition Glow</header>
-            <p>Use transition and box shadows to glow on hover</p>
-            <code class = "card">
-                .code-card .card-header {<br>
-                    &nbsp;&nbsp;transition: all 0.5s ease-in-out; <br>
-                    &nbsp;&nbsp;box-shadow: inset 0px 0px 8px;<br>
-                    &nbsp;&nbsp;(rgba(232, 102, 236, 1), 0 0 15px<br>
-                    &nbsp;&nbsp;(rgba(232, 102, 236, 1);<br>                                 
-                }
-                </code>
-        </section>
-        <section class="content">
-            <header class="card-header">Overlay Card With Title</header>
-            <p>Use position properties and negative margins to raise elements higher than their natural starting point</p>
-            <code class = "card">
-                .card-header {<br>
-                    &nbsp;&nbsp;position: relative; <br>
-                    &nbsp;&nbsp;margin-top: -20;<br>
-                                        
-                }
-            </code>
-        </section>
-
-
-
+          }
+        </code>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
